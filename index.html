@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="first-angular-app">
+<head>
+	<base href="/">
+	<title></title>
+	<script src="./node_modules/angular/angular.js"></script>
+
+	<script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+	<script src="./public/app.js"></script>
+	<script src="./public/components/home/home.controller.js"></script>
+	<script src="./public/components/about/about.controller.js"></script>
+
+	<script src="./public/components/contact/contact.controller.js"></script>
+
+
+</head>
+<body>
+	<ul>
+		<li><a ui-sref="home">home</a></li>
+		<li><a ui-sref="about">about</a></li>
+		<li><a ui-sref="contact">contact</a></li>
+	</ul>
+
+
+	<div ui-view> </div>
+</body>
+</html>
